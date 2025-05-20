@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dred Labs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" />
+        <h1>Dred Labs</h1>
+
+        <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+        <nav>
+            <a href="#home">
+                <img src="images/home-icon.png" alt="" /> Home
+            </a>
+            <a href="#about">
+                <img src="images/about-icon.png" alt="" /> About
+            </a>
+            <a href="#projects">
+                <img src="images/projects-icon.png" alt="" /> Projects
+            </a>
+            <a href="#contact">
+                <img src="images/contact-icon.png" alt="" /> Contact
+            </a>
+            <a href="#location">
+                <img src="images/location-icon.png" alt="" /> Location
+            </a>
+        </nav>
+        </a>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Dred Labs</h2>
+        <p>Reach for the stars, one byte at a time</p>
+        <button>Explore More</button>
+    </section>
+
+    <section id="about" class="section">
+        <h3>About us</h3>
+        <p>
+            we're a group of passionate developers with expertise in creating modern, responsive, and user-friendly applications. Our goal is to bring ideas to life through clean and efficient code.
+        </p>
+    </section>
+
+    <section id="projects" class="section">
+        <h3>Our Projects</h3>
+        <p>
+            Here are some of the projects we have worked on. Each project reflects our dedication to quality and innovation.
+        </p>
+    </section>
+    <section id="location" class="section">
+        <h3>Visit us</h3>
+        <p>Kapasa makasa university</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h3>Contact us</h3>
+        <p>If you'd like to collaborate or have any questions, feel free to reach out to us!</p>
+        <div class="social-links">
+            <a href="https://fb.me/dredlabs" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-icon.png" alt="" />
+            </a>
+            <a href="https://wa.me/260772273500" target="_blank" aria-label="WhatsApp">
+                <img src="images/whatsapp-icon.png" alt="" />
+            </a>
+            <a href="https://www.instagram.com/dredlabs" target="_blank" aria-label="Instagram">
+                <img src="images/instagram-icon.png" alt="" />
+            </a>
+        </div>
+    </section>
+    </div>
+
+    <footer>
+        <img src="images/logo.png" alt="Logo" />
+        <p>&copy; 2025 DredLabs. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
